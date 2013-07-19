@@ -1,5 +1,5 @@
 name: Ryan Wachter
 markdown: redcarpet
-permalink: pretty
+permalink: /:categories/:title
 redcarpet:
   extensions: ["no_intra_emphasis"]
