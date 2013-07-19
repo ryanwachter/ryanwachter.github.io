@@ -1,0 +1,37 @@
+{% for category in site.categories %}
+
+	{% assign name = category|first %}
+
+	<h2 id="{{ name|replace:" ", "-" }}">
+		<div class="page_width">
+			<div class="sidebar_width">{{ name }}</div>
+		</div>
+	</h2>
+
+	<div>
+		<div class="page_width clearfix">
+			<div class="sidebar_width">
+					{% for post in site.categories[name] %}
+						<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ post.image }}" alt="{{ post.title }}" /></a>
+					{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% endfor %}
+
+<h2 id="contact">
+	<div class="page_width">
+		<div class="sidebar_width">
+			contact ryan
+		</div>
+	</div>
+</h2>
+
+<div>
+	<div class="page_width clearfix">
+		<div class="sidebar_width">
+			<p><a href="mailto:ryanwachter@verizon.net">| email |</a></p>
+		</div>
+	</div>
+</div>

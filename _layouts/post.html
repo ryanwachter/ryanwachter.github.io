@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<img src="/assets/images/work/{{ page.image }}" alt="{{ page.title }} " />
+<p>{{ content }}</p>
+<p class="copy">&copy; Ryan Wachter 2005-{{ site.time | date: "%y" }}</p>

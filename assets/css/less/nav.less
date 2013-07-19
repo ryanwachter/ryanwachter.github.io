@@ -1,0 +1,97 @@
+#nav {
+	clear: both;
+
+	h2 {
+		clear: left;
+		width: 100%;
+		height: 30px;
+		background: #100e0e;
+		color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+		padding-bottom: 8px;
+		margin-top: 5px;
+		color: #949494;
+		outline: 0px;
+		text-decoration: none;
+
+		.sidebar_width {
+			padding-top: 22px;
+		}
+
+		&.ui-state-active {
+			color: #fff;
+		}
+
+		&:hover {
+			outline: 0px;
+			text-decoration: none;
+		}
+	}
+
+	.ui-state-active {
+		background: @active_bg;
+	}
+
+	.ui-accordion-content-active {
+		overflow: auto;
+		background: @active_bg;
+	}
+
+	.page_width {
+		// prevent expansion of thumbs before jQuery can hide them
+		display: none;
+
+		.sidebar_width {
+			width: 170px;
+			text-align: right;
+			padding: 15px 0px;
+
+			img {
+				width: 167px;
+				height: 44px;
+				margin-bottom: 5px;
+				cursor: pointer;
+
+				&.logo {
+					clear: left;
+					float: left;
+					margin-right: 5px;
+					width: 81px;
+				}
+
+				&.stat {
+					float: left;
+					width: 81px;
+				}
+			}
+		}
+	}
+
+
+	.ui-accordion-content { overflow: hidden;}
+
+	.thumbs_container {
+		height: 245px;
+		overflow: hidden;
+	}
+
+	p {
+		font-size: 10px;
+		text-transform: uppercase;
+		opacity: 25;
+	}
+
+	a {
+		color: #ccc;
+		text-decoration: none;
+
+		&:hover {
+			color: #c37200;
+			text-decoration: none;
+		}
+	}
+
+	.up, .down { color:#000; }
+
+}
