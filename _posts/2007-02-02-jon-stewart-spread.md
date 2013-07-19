@@ -2,7 +2,7 @@
 layout: post
 title:  "Jon Stweard magazine spread"
 categories: [print design]
-image: steward.jpg
+image: stewart.gif
 ---
 
 Jon Stewart Magazine Spread (student work)

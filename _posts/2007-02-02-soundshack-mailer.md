@@ -2,7 +2,7 @@
 layout: post
 title:  "Soundshack Mailer"
 categories: [print design]
-image: soundshack-mailer.jpg
+image: soundshack-mailer.gif
 ---
 
 Soundshack Self Mailer (student work)

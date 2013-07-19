@@ -2,7 +2,7 @@
 layout: post
 title:  "Soundshack"
 categories: [identity]
-image: soundshack.jpg
+image: soundshack.gif
 ---
 
 Identity design (student work)

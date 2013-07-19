@@ -11,9 +11,35 @@
 	<div>
 		<div class="page_width clearfix">
 			<div class="sidebar_width">
-					{% for post in site.categories[name] %}
-						<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ post.image }}" alt="{{ post.title }}" /></a>
+
+				{% assign posts = site.categories[name] %}
+
+				{% assign numPosts = posts|size %}
+
+					{% if numPosts > 4 %}
+						<div class="thumbs_container">
+							<div class="thumbs">
+					{% endif %}
+
+					{% for post in posts %}
+
+						{% if post.thumb %}
+							{% assign image = post.thumb %}
+						{% else %}
+							{% assign image = post.image %}
+						{% endif %}
+
+						<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ image }}" alt="{{ post.title }}" /></a>
 					{% endfor %}
+
+					{% if numPosts > 4 %}
+							</div>
+						</div>
+					{% endif %}
+
+					{% if numPosts > 5 %}
+						<p><a class="up">| scroll up |</a> <a class="down">| scroll down |</a></p>
+					{% endif %}
 			</div>
 		</div>
 	</div>
