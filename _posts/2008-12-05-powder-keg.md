@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Powder Keg"
-categories: [t-shirt design]
+categories: t-shirt
 image: powder-keg.gif
 ---
 

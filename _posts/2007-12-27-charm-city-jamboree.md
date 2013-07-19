@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Charm City Jamboree"
-categories: [t-shirt design]
+categories: t-shirt
 image: charm-city-jamboree.jpg
 ---
 

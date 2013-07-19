@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Garbage Pail Kids"
-categories: [latest]
+categories: latest
 image: gpk.jpg
 ---
 

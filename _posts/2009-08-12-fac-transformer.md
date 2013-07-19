@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FAC Transformer"
-categories: [latest]
+categories: latest
 image: fac-transformer.jpg
 thumb: fac-transformer.gif
 ---

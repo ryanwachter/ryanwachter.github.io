@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Color Alterations"
-categories: [print design]
+categories: print
 image: color-alt.jpg
-image: color-alt.gif
+thumb: color-alt.gif
 ---
 
 Color alterations (left: original image)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Soundshack"
-categories: [identity]
+categories: identity
 image: soundshack.gif
 ---
 

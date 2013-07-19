@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Teaching Tours"
-categories: [identity]
+categories: identity
 image: teaching-tours.gif
 ---
 

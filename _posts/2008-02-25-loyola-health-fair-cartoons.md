@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Loyola Health Fair"
-categories: [t-shirt design]
+categories: t-shirt
 image: loyola-health02.gif
 ---
 

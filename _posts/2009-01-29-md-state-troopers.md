@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Maryland State Troopers"
-categories: [t-shirt design]
+categories: t-shirt
 image: md-state-police.jpg
 ---
 

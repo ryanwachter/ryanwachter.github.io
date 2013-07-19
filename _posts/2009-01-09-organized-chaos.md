@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Organized Chaos"
-categories: [t-shirt design]
+categories: t-shirt
 image: organized-chaos.gif
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Soundshack Mailer"
-categories: [print design]
+categories: print
 image: soundshack-mailer.gif
 ---
 

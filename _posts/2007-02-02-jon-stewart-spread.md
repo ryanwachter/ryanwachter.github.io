@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jon Stweard magazine spread"
-categories: [print design]
+categories: print
 image: stewart.gif
 ---
 
