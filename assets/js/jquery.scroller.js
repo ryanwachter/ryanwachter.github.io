@@ -1,3 +1,6 @@
+/**
+ * @codekit-prepend "jquery.js", "jquery.accordion.js", "jquery.cookie.js";
+ */
 var scroller = (function($) {
 
 	/**
