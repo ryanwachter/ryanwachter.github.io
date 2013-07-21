@@ -3,14 +3,14 @@
 	{% assign name = category|first %}
 
 	<h2 id="{{ name|replace:" ", "-" }}">
-		<div class="page_width">
-			<div class="sidebar_width">{{ name }}</div>
+		<div class="page">
+			<div class="sidebar">{{ name }}</div>
 		</div>
 	</h2>
 
 	<div>
-		<div class="page_width clearfix">
-			<div class="sidebar_width">
+		<div class="page clearfix">
+			<div class="sidebar">
 
 				{% assign posts = site.categories[name] %}
 
@@ -47,16 +47,16 @@
 {% endfor %}
 
 <h2 id="contact">
-	<div class="page_width">
-		<div class="sidebar_width">
+	<div class="page">
+		<div class="sidebar">
 			contact ryan
 		</div>
 	</div>
 </h2>
 
 <div>
-	<div class="page_width clearfix">
-		<div class="sidebar_width">
+	<div class="page clearfix">
+		<div class="sidebar">
 			<p><a href="mailto:ryanwachter@verizon.net">| email |</a></p>
 		</div>
 	</div>

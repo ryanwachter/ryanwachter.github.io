@@ -126,7 +126,7 @@ acronym {
   outline: 0px;
   text-decoration: none;
 }
-#nav h2 .sidebar_width {
+#nav h2 .sidebar {
   padding-top: 22px;
 }
 #nav h2.ui-state-active {
@@ -143,28 +143,25 @@ acronym {
   overflow: auto;
   background: #050404;
 }
-#nav .page_width {
-  display: none;
-}
-#nav .page_width .sidebar_width {
+#nav .page .sidebar {
   width: 170px;
   text-align: right;
   padding: 15px 0px;
 }
-#nav .page_width .sidebar_width img {
+#nav .page .sidebar img {
   display: block;
   width: 167px;
   height: 44px;
   margin-bottom: 5px;
   cursor: pointer;
 }
-#nav .page_width .sidebar_width img.logo {
+#nav .page .sidebar img.logo {
   clear: left;
   float: left;
   margin-right: 5px;
   width: 81px;
 }
-#nav .page_width .sidebar_width img.stat {
+#nav .page .sidebar img.stat {
   float: left;
   width: 81px;
 }
@@ -205,7 +202,7 @@ h1 {
 #container {
   position: relative;
 }
-.page_width,
+.page,
 #container {
   width: 960px;
   margin: 0px auto;
