@@ -16,30 +16,23 @@
 
 				{% assign numPosts = posts|size %}
 
-					{% if numPosts > 4 %}
-						<div class="thumbs_container">
-							<div class="thumbs">
+				<div class="thumbs_container">
+					<div class="thumbs">
+
+				{% for post in posts %}
+
+					{% if post.thumb %}
+						{% assign image = post.thumb %}
+					{% else %}
+						{% assign image = post.image %}
 					{% endif %}
 
-					{% for post in posts %}
+					<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ image }}" alt="{{ post.title }}" /></a>
+				{% endfor %}
 
-						{% if post.thumb %}
-							{% assign image = post.thumb %}
-						{% else %}
-							{% assign image = post.image %}
-						{% endif %}
-
-						<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ image }}" alt="{{ post.title }}" /></a>
-					{% endfor %}
-
-					{% if numPosts > 4 %}
-							</div>
-						</div>
-					{% endif %}
-
-					{% if numPosts > 5 %}
-						<p><a class="up">| scroll up |</a> <a class="down">| scroll down |</a></p>
-					{% endif %}
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>

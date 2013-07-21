@@ -165,13 +165,6 @@ acronym {
   float: left;
   width: 81px;
 }
-#nav .ui-accordion-content {
-  overflow: hidden;
-}
-#nav .thumbs_container {
-  height: 245px;
-  overflow: hidden;
-}
 #nav p {
   font-size: 10px;
   text-transform: uppercase;
@@ -184,10 +177,6 @@ acronym {
 #nav a:hover {
   color: #c37200;
   text-decoration: none;
-}
-#nav .up,
-#nav .down {
-  color: #000;
 }
 body {
   background: #191616 url('../images/bg.gif') top left repeat-x;

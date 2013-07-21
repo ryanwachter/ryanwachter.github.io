@@ -35,36 +35,6 @@ var scroller = (function($) {
 		return section ? sections.index($("#" + section)) : 0;
 	}
 
-	function setCookie(num) {
-		$.cookie("scroller", num, { path: "/" });
-	}
-
-	function getCookie() {
-		return parseInt($.cookie("scroller"));
-	}
-
-	function moveThumbs(obj) {
-		var target = $(obj).siblings(".thumbs_container").find(".thumbs");
-		console.log(target);
-	}
-
-	function setupEvents() {
-
-		$(".down").on("click", function () {
-			setCookie(getCookie() + 1);
-			moveThumbs(this);
-
-			// move the thumbnails
-			// manage display of "scroll up" and "scroll down"
-		
-		});
-	    
-	    $(".up").on("click", function () {	
-			setCookie(getCookie() - 1);
-			moveThumbs(this);
-		});
-	}
-
 	return {
 
 		create: function(obj) {
@@ -74,14 +44,8 @@ var scroller = (function($) {
 			obj.accordion({
 				header: _header,
 				active: findSectionIndex(),
-				heightStyle: "content",
-				beforeActivate: function (event, ui) {
-					setCookie(0);
-					console.log(getCookie());
-				}
+				heightStyle: "content"
 			});
-
-			setupEvents();
 			
 		}
 
