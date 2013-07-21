@@ -2,22 +2,17 @@
 
 	{% assign name = category|first %}
 
-	<h2 id="{{ name|replace:" ", "-" }}">
-		<div class="page">
+	<h2 class="{{ name|replace:" ", "-" }}">
+		<div class="center">
 			<div class="sidebar">{{ name }}</div>
 		</div>
 	</h2>
 
-	<div>
-		<div class="page clearfix">
+	<div class="page">
+		<div class="center">
 			<div class="sidebar">
 
 				{% assign posts = site.categories[name] %}
-
-				{% assign numPosts = posts|size %}
-
-				<div class="thumbs_container">
-					<div class="thumbs">
 
 				{% for post in posts %}
 
@@ -28,10 +23,8 @@
 					{% endif %}
 
 					<a href="{{ post.url }}"><img src="/assets/images/thumbs/{{ image }}" alt="{{ post.title }}" /></a>
-				{% endfor %}
 
-					</div>
-				</div>
+				{% endfor %}
 				
 			</div>
 		</div>
@@ -39,8 +32,8 @@
 
 {% endfor %}
 
-<h2 id="contact">
-	<div class="page">
+<h2 class="contact">
+	<div class="center">
 		<div class="sidebar">
 			contact ryan
 		</div>
@@ -48,9 +41,9 @@
 </h2>
 
 <div>
-	<div class="page clearfix">
+	<div class="center">
 		<div class="sidebar">
-			<p><a href="mailto:ryanwachter@verizon.net">| email |</a></p>
+			<p><a href="mailto:rwachter22@yahoo.com">email</a></p>
 		</div>
 	</div>
 </div>

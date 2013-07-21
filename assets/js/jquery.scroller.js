@@ -32,7 +32,7 @@ var scroller = (function($) {
 		var sections = _obj.find(_header);
 		var section = findSection();
 
-		return section ? sections.index($("#" + section)) : 0;
+		return section ? sections.index($("." + section)) : 0;
 	}
 
 	return {

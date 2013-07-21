@@ -69,42 +69,23 @@ abbr,
 acronym {
   border: 0;
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.clearfix:after {
-  clear: both;
-}
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1;
-}
-#content {
+.content {
   position: absolute;
   margin-left: 216px;
   margin-top: 44px;
 }
-#content .not_found {
+.content .not_found {
   margin-top: 15px;
   font-size: 16px;
 }
-#content img {
+.content img {
   margin-bottom: 10px;
 }
-#content p {
+.content p {
   font-size: 12px;
   color: #999;
 }
-#content p.copy {
+.content p.copy {
   font-size: 10px;
   color: #555;
   margin: 5px 0 30px 0;
@@ -113,11 +94,10 @@ acronym {
   clear: both;
 }
 #nav h2 {
+  background: #100e0e;
   clear: left;
   width: 100%;
   height: 30px;
-  background: #100e0e;
-  color: #fff;
   font-size: 16px;
   cursor: pointer;
   padding-bottom: 8px;
@@ -126,15 +106,8 @@ acronym {
   outline: 0px;
   text-decoration: none;
 }
-#nav h2 .sidebar {
-  padding-top: 22px;
-}
 #nav h2.ui-state-active {
   color: #fff;
-}
-#nav h2:hover {
-  outline: 0px;
-  text-decoration: none;
 }
 #nav .ui-state-active {
   background: #050404;
@@ -143,40 +116,17 @@ acronym {
   overflow: auto;
   background: #050404;
 }
-#nav .page .sidebar {
+#nav .center .sidebar {
   width: 170px;
   text-align: right;
   padding: 15px 0px;
 }
-#nav .page .sidebar img {
+#nav .center .sidebar img {
   display: block;
   width: 167px;
   height: 44px;
   margin-bottom: 5px;
   cursor: pointer;
-}
-#nav .page .sidebar img.logo {
-  clear: left;
-  float: left;
-  margin-right: 5px;
-  width: 81px;
-}
-#nav .page .sidebar img.stat {
-  float: left;
-  width: 81px;
-}
-#nav p {
-  font-size: 10px;
-  text-transform: uppercase;
-  opacity: 25;
-}
-#nav a {
-  color: #ccc;
-  text-decoration: none;
-}
-#nav a:hover {
-  color: #c37200;
-  text-decoration: none;
 }
 body {
   background: #191616 url('../images/bg.gif') top left repeat-x;
@@ -188,11 +138,8 @@ h1 {
   margin-bottom: 6px;
   float: left;
 }
-#container {
-  position: relative;
-}
-.page,
-#container {
+.center {
   width: 960px;
   margin: 0px auto;
+  position: relative;
 }
