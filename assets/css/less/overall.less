@@ -14,3 +14,19 @@ h1 {
 	margin: 0px auto;
 	position: relative;
 }
+
+.clearfix {
+
+	*zoom: 1;
+
+	&:after {
+		content: " ";
+	    display: table;
+	    clear: both;
+	}
+
+	&:before {
+		content: " ";
+	    display: table;
+	}
+}
