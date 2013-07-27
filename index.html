@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-{% assign post = site.posts|first %}
+{% assign post = site.categories.latest|first %}
 
 <img src="/assets/images/work/{{ post.image }}" alt="{{ post.title }} " />
 <p>{{ post.content }}</p>
