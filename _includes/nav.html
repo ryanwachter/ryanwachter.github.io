@@ -1,18 +1,18 @@
-{% for category in site.categories %}
+{% assign categories = "latest|t-shirt|print|identity" | split: "|" %}
 
-	{% assign name = category|first %}
-
-	<h2 class="{{ name|replace:" ", "-" }}">
+{% for category in categories %}
+	
+	<h2 class="{{ category }} page">
 		<div class="center">
-			<div class="sidebar">{{ name }}</div>
+			<div class="sidebar">{{ category }}</div>
 		</div>
 	</h2>
 
 	<div class="page">
 		<div class="center">
-			<div class="sidebar">
+			<div class="sidebar thumbs">
 
-				{% assign posts = site.categories[name] %}
+				{% assign posts = site.categories[category] %}
 
 				{% for post in posts %}
 
@@ -32,7 +32,7 @@
 
 {% endfor %}
 
-<h2 class="contact">
+<h2 class="contact page">
 	<div class="center">
 		<div class="sidebar">
 			contact ryan
