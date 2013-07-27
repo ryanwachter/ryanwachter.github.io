@@ -116,7 +116,7 @@ var scroller = (function($) {
 				nav.find(".down").show();
 
 				if (newNum === 0) {
-					nav.find(".up").hide();
+					$(this).hide();
 				}
 			});
 
@@ -136,8 +136,8 @@ var scroller = (function($) {
 
 				nav.find(".up").show();
 
-				if (newNum === numThumbs) {
-					nav.find(".down").hide();
+				if (newNum === numThumbs - 5) {
+					$(this).hide();
 				}
 			});
 		}
