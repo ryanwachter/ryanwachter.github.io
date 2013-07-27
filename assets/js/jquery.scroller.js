@@ -75,7 +75,7 @@ var scroller = (function($) {
 	function addGroupNav(group) {
 
 		var numThumbs = group.find("img").length;
-		if (numThumbs < _userOptions.maxDisplay) {
+		if (numThumbs <= _userOptions.maxDisplay) {
 			return;
 		}
 
