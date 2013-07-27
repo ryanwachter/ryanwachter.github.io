@@ -77,8 +77,8 @@ var scroller = (function($) {
 	 */
 	function navHtml() {
 		var nav = $("<div />").addClass("scroll-nav");
-		$("<div />").addClass("up").html("<a href='#'>" + _userOptions.upText + "</a>").hide().appendTo(nav);
-		$("<div />").addClass("down").html("<a href='#'>" + _userOptions.downText + "</a>").hide().appendTo(nav);
+		$("<a />").addClass("up").attr("href", "#").html(_userOptions.upText).hide().appendTo(nav);
+		$("<a />").addClass("down").attr("href", "#").html(_userOptions.downText).hide().appendTo(nav);
 		return nav;
 	}
 
@@ -111,6 +111,8 @@ var scroller = (function($) {
 
 			$(".up").on("click", function(e) {
 
+				e.preventDefault();
+
 				var newNum = getCookie() - 1;
 				setCookie(newNum);
 
@@ -123,7 +125,7 @@ var scroller = (function($) {
 					marginTop: newMargin
 				});
 
-				nav.find(".down").show();
+				$(this).siblings(".down").show();
 
 				if (newNum === 0) {
 					$(this).hide();
@@ -131,6 +133,8 @@ var scroller = (function($) {
 			});
 
 			$(".down").on("click", function(e) {
+
+				e.preventDefault();
 
 				var newNum = getCookie() + 1;
 				setCookie(newNum);
@@ -144,7 +148,7 @@ var scroller = (function($) {
 					marginTop: newMargin
 				});
 
-				nav.find(".up").show();
+				$(this).siblings(".up").show();
 
 				if (newNum === numThumbs - 5) {
 					$(this).hide();

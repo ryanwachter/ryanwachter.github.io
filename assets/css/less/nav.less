@@ -31,10 +31,11 @@
 
 	.center {
 
+		padding: 15px 0px;
+		
 		.sidebar {
 			width: 170px;
 			text-align: right;
-			padding: 15px 0px;
 
 			img {
 				display: block;
@@ -42,6 +43,33 @@
 				height: 44px;
 				margin-bottom: 5px;
 				cursor: pointer;
+			}
+		}
+
+		.scroll-nav {
+
+			width: 170px;
+			text-transform: lowercase;
+			font-size: 13px;
+			.clearfix;
+
+			a {
+				color: @accent;
+				text-decoration: none;
+				display: block;
+				position: relative;
+
+				&:hover {
+					color: #ccc;
+				}
+			}
+
+			.up {
+				float: left;
+			}
+
+			.down {
+				float: right;
 			}
 		}
 	}
