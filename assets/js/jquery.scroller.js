@@ -48,17 +48,27 @@ var scroller = (function($) {
 
 		var containers = _obj.find(".thumbs_container");
 
-		// set height of thumbs_container
-		var groupHeight = _thumbHeight * _userOptions.maxDisplay;
-		containers.css({
-			height: groupHeight,
-			overflow: "hidden"
-		});
-
-		$.each(containers, function(i) {
+		$.each(containers, function() {
+			setContainerHeight($(this));
 			addGroupNav($(this));
 		});
 		
+	}
+
+	function setContainerHeight(group) {
+		var groupHeight;
+		var numThumbs = group.find("img").length;
+
+		if (numThumbs >= _userOptions.maxDisplay) {
+			groupHeight = _thumbHeight * _userOptions.maxDisplay;
+		} else {
+			groupHeight = _thumbHeight * numThumbs;
+		}
+		
+		group.css({
+			height: groupHeight,
+			overflow: "hidden"
+		});
 	}
 
 	/**
