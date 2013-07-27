@@ -119,7 +119,7 @@ var scroller = (function($) {
 				var numThumbs = thumbs.find("a").length;
 
 				var newMargin = parseInt(thumbs.css("marginTop"), 10) + _thumbHeight;
-				thumbs.css({
+				thumbs.animate({
 					marginTop: newMargin
 				});
 
@@ -140,7 +140,7 @@ var scroller = (function($) {
 				var numThumbs = thumbs.find("a").length;
 
 				var newMargin = parseInt(thumbs.css("marginTop"), 10) - _thumbHeight;
-				thumbs.css({
+				thumbs.animate({
 					marginTop: newMargin
 				});
 
