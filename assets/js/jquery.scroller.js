@@ -101,7 +101,7 @@ var scroller = (function($) {
 			parent.find(".up").show();
 		}
 
-		if (scrollNum < numThumbs) {
+		if (scrollNum < numThumbs - _userOptions.maxDisplay) {
 			parent.find(".down").show();
 		}
 	}
@@ -187,11 +187,29 @@ var scroller = (function($) {
 		return parseInt($.cookie("scroller"), 10);
 	}
 
+	function initialScroll() {
+		var section = findSection();
+		section = $(".ui-accordion-content-active");
+
+		var newMargin = _thumbHeight * getCookie() * -1;
+		section.find(".thumbs").css({
+			marginTop: newMargin
+		});
+	}
+
+	function reset() {
+		setCookie(0);
+		var groups = _obj.find(".thumbs");
+		groups.css({
+			marginTop: 0
+		});
+		$(".up").hide();
+		$(".down").show();
+	}
+
 	return {
 
 		create: function(obj, options) {
-
-			setCookie(0);
 
 			_obj = obj;
 			_userOptions = $.extend({}, _defaultOptions, options);
@@ -204,10 +222,12 @@ var scroller = (function($) {
 				active: findSectionIndex(),
 				heightStyle: "content",
 				activate: function (e, ui) {
-					setCookie(0);
+					console.log("reset");
+					reset();
 				}
 			});
-			
+
+			initialScroll();
 		}
 
 	};
