@@ -8,7 +8,10 @@
   <script src="/assets/js/jquery.scroller.min.js"></script>
   <script>
   $(document).ready(function() {
-    $("#nav").scroller();
+    $("#nav").scroller({
+      upText: "&uarr; up",
+      downText: "down &darr;"
+    });
   });
   </script>
 
