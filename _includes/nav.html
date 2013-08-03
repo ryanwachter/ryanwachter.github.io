@@ -1,10 +1,16 @@
 {% assign categories = "latest|t-shirt|print|identity" | split: "|" %}
 
 {% for category in categories %}
+
+	{% assign display = category %}
+
+	{% if category == "t-shirt" or category == "print" %}
+	     {% capture display %}{{ category }} design{% endcapture %}
+	{% endif %}
 	
 	<h2 class="{{ category }} page">
 		<div class="center">
-			<div class="sidebar">{{ category }}</div>
+			<div class="sidebar">{{ display }}</div>
 		</div>
 	</h2>
 
@@ -35,7 +41,7 @@
 <h2 class="contact page">
 	<div class="center">
 		<div class="sidebar">
-			contact ryan
+			contact
 		</div>
 	</div>
 </h2>
