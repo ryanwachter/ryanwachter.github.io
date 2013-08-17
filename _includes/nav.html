@@ -1,10 +1,10 @@
-{% assign categories = "latest|t-shirt|print|identity" | split: "|" %}
+{% assign categories = "latest|t-shirt|identity" | split: "|" %}
 
 {% for category in categories %}
 
 	{% assign display = category %}
 
-	{% if category == "t-shirt" or category == "print" %}
+	{% if category == "t-shirt" %}
 	     {% capture display %}{{ category }} design{% endcapture %}
 	{% endif %}
 	
